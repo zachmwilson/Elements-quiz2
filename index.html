@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Elements Quiz</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+      <form action="/form-handling-url" method="post">
+        <fieldset>
+            <legend>Add user</legend>
+
+            <div>
+                <label for="firstname">First name:</label>
+                <input type="text" id="firstname" name="first_name" required>
+            </div>
+
+            <div>
+                <label for="lastname">Last name</label>
+                <input type="text" id="lastname" name="last_name" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id+"email" name="last_name" required>
+            </div>
+
+            <div>
+                <label for="status">Status</label>
+                <select id="status" name="user_status_name">
+                  <option value="student">Student</option>
+                  <option value="teacher">Teacher</option>
+                  <option value="guest">Guest</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="currentdate">Current Date</label>
+                <input type="date" id="currentdate" name="currentdate">
+              </div>
+
+              <p>What is your favorite programming language?</p>
+
+              <div>
+                <button type="submit">HTML</button>
+                <button type="submit">CSS</button>
+                <button type="submit">JavaScript</button>
+              </div>
+
+              <div>
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="newsletter-checkbox">
+                  <input type="checkbox" id="newsletter-checkbox" name="customer[accepts_marketing]" value="1" required>
+                  Subscribe to our newsletter
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="newsletter-checkbox">
+                  <input type="checkbox" id="newsletter-checkbox" name="customer[accepts_marketing]" value="1" required>
+                  Agree to terms and conditions
+                </label>
+
+              </div>
+
+              <div>
+                <button type="submit">SUBMIT</button>
+              </div>
+
+        </fieldset>
+
+    </form>
+  </body>
+</html>
